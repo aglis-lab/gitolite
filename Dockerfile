@@ -21,5 +21,3 @@ EXPOSE 22
 
 # Default command is to run the SSH server
 CMD ["sshd"]
-
-zaen@zaen gitolite % podman run -e SSH_KEY="$(cat ~/.ssh/id_rsa.pub)" -e SSH_KEY_NAME="$(whoami)" gitolite           
